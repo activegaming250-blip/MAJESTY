@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<title>SHOPPING PAGE</title>
+
+<style>
+body {
+    background-color: lightgray;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* MAIN LAYOUT */
+.Main_box {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 200px;
+  min-width: 200px;
+  height: 100vh;
+  background: linear-gradient(180deg, #ffd1dc, #ff9eb5, #ff6f91);
+  padding-top: 20px;
+  box-shadow: 5px 0 15px rgba(255, 105, 135, 0.4);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 12px 15px;
+  margin: 8px;
+  text-decoration: none;
+  border-radius: 10px;
+  background: #ff6f91;
+  font-size: 25px;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.sidebar p {
+  margin: 15px 10px 5px;
+  font-weight: 50px;
+  
+}
+
+.sidebar span {
+  display: block;
+  margin: 5px 15px;
+  border-radius:10px;
+}
+
+/* MARQUEE */
+.cute-marquee {
+  background: linear-gradient(90deg, #ff9eb5, #ff6f91, #ffb6c1);
+  color: white;
+  font-size: 22px;
+  padding: 10px;
+  height:150px;
+}
+
+/* CARDS SECTION */
+.cards-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  width: calc(50% - 10px);
+  height: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+
+.text {
+  height: 15%;
+  background: #ff6f91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.see-more {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: 10px solid;
+  border-radius: 7px;
+  border-color: pink;
+  background-color: pink;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .Main_box {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+.message{
+  font-size: 50px;
+  
+}
+
+span {
+  font-size:25px;
+  text-align: center ;
+  color: White;
+}
+
+.side_p {
+  font-family: Arial;
+  font-size: 25px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: #ff6f91;
+  border-color: #ff6f91;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<marquee class="cute-marquee" scrollamount="25">
+<p class="message">-----💖 EVERYTHING A PRINCESS WANT IS HERE!💫-----</p>
+</marquee>
+
+
+
+<div class="Main_box">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <a href="Homepage1.html" class="active">🏠 Home</a>
+  <a href="shopping.html" class="active">🛍 Shopping</a>
+  <a href="About_us.html" class="active">💖 About Us</a>
+  <a href="Feedback.html" class="active">💬 Feedback</a>
+  <a href="Contact.html" class="active">📞 Contact</a>
+
+  <p class="side_p">ITEMS WE HAVE</p>
+  <span>👗 Modern Dress</span>
+  <span>👠 Footwear</span>
+  <span>💄 Makeup Product</span>
+  <span>💍 Accessories</span>
+
+  <p class="side_p">BRANDS 🔥</p>
+  <span>🖤 ZARA</span>
+  <span>🤍 NIKE</span>
+  <span>💜 ONLY</span>
+  <span>💚 KNEE TOE</span>
+  <span>💙 S&A BLUE</span>
+
+  <p class="side_p">SPECIAL ✨</p>
+  <span>🔥 Trending</span>
+  <span>🎁 Offers</span>
+  <span>✨ New Arrivals</span>
+</div>
+
+<!-- CARDS -->
+<div class="cards-section">
+<div class="card-container">
+
+<div class="card">
+  <img src="/MAJESTY/IMG_20260504_181925.jpg">
+  <div class="text">
+    <a href="shopping.html" class="see-more">SEE MORE ✨</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="/MAJESTY/IMG_20260504_183802.jpg">
+  <div class="text">
+    <a href="shopping.html" class="see-more">SEE MORE ✨</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="/MAJESTY/IMG_20260504_184531.jpg">
+  <div class="text">
+    <a href="shopping.html" class="see-more">SEE MORE ✨</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="/MAJESTY/IMG_20260504_184616.jpg">
+  <div class="text">
+    <a href="shopping.html" class="see-more">SEE MORE ✨</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="/MAJESTY/IMG_20260505_075222.jpg">
+  <div class="text">
+    <a href="shopping.html" class="see-more">SEE MORE ✨</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="/MAJESTY/shopping_page-img/Screenshot_2026-05-05-08-05-26-22_680d03679600f7af0b4c700c6b270fe7.jpg">
+  <div class="text">
+    <a href="shopping.html" class="see-more">SEE MORE ✨</a>
+  </div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
